@@ -3,11 +3,10 @@ $(function() {
 	var widthSlide = $('.carousel__item').width()
 	var actualPosition = 0
 	var contentWidth = (slidesLenght-1)*widthSlide
-
 	var $leftButton = $('.left-cursor')
 	var $rightButton = $('.right-cursor')
-
 	var $overflowContent = $('.content')
+
 
 	$rightButton.on('click', function(){
 		console.log(actualPosition)
@@ -24,5 +23,5 @@ $(function() {
 		actualPosition-=widthSlide
 		$overflowContent.animate({scrollLeft: actualPosition}, 400)
 	})
-	
+
 })
