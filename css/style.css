@@ -56,7 +56,10 @@ body {
 .cursor:after {
 	-webkit-transition: all .1s;
 	-o-transition: all .1s;
-	transition: all .1s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+    opacity: 0.1;
 }
 
 .cursor:active:after {
@@ -66,9 +69,12 @@ body {
 	transform: scale(1.1);
 }
 
-
 .cursor:hover {
-	background-color: rgba(155, 155, 155, .3);
+	background-color: rgba(155, 155, 155, .6);    
+}
+
+.cursor:hover:after {
+    opacity: 1;
 }
 
 .content {	
